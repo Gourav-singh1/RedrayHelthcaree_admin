@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+.heading {
+  font-family: "Poppins", sans-serif;
+}
+.error_text {
+  color: #dc3545; /* red (Bootstrap danger) — change if chaho */
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+/* container.css */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem; /* 16px */
+  width: 100%;
+}
+/*  root =================== */
+:root {
+  --dark: #000;
+  --Primary: #259ae1;
+  --lightDark: #0000009e;
+  --gray: #dad7d7;
+  --light_blue: #96cef1;
+}
+
+/* color class ====================== */
+.text_dark {
+  color: var(--dark);
+}
+.text_Primary {
+  color: var(--Primary);
+}
+.bg_dark {
+  background-color: var(--dark);
+}
+.bg_Primary {
+  background-color: var(--Primary);
+}
+.bg_lightDark {
+  background-color: var(--lightDark);
+}
+.bg_gray {
+  background-color: var(--gray);
+}
+.bg_light_blue {
+  background-color: var(--light_blue);
+}
+
+.p-dialog-content {
+  border-radius: 10px;
+}
+
+/* Add padding between icon and text in PrimeReact Toast */
+.p-toast-message-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.p-toast-message-icon {
+  font-size: 1.2rem;
+  margin-right: 8px !important;
+}
+
+.p-dropdown:focus,
+.p-focus {
+  box-shadow: none !important;
+  border-color: #ced4da !important; /* neutral gray border */
+}
+.p-dropdown {
+  border-radius: 8px !important;
+  border: 1px solid #d1d5db !important;
+  padding: 4px 8px !important;
+}
+
+/* App.css ya component css me */
+.custom-confirm-popup {
+  padding: 1rem; /* popup me spacing */
+  font-size: 1rem;
+}
+
+.custom-confirm-popup .p-button {
+  min-width: 100px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Accept button red */
+.custom-confirm-popup .p-confirm-popup-accept {
+  background-color: #007bff !important; /* blue */
+  border-color: #007bff !important;
+  color: white !important;
+}
+
+/* Reject button grey */
+.custom-confirm-popup .p-confirm-popup-reject {
+  background-color: #6c757d !important; /* grey */
+  border-color: #6c757d !important;
+  color: white !important;
+}
+
+/* popup padding */
+.custom-confirm-popup {
+  padding: 1rem;
+}
+
+/* Accept button blue */
+.custom-confirm-popup .p-confirm-popup-accept {
+  margin-top: 10px;
+  background-color: #007bff !important; /* blue */
+  border-color: #007bff !important;
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+}
+
+/* Reject button grey */
+.custom-confirm-popup .p-confirm-popup-reject {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #6c757d !important; /* grey */
+  border-color: #6c757d !important;
+  color: white !important;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+}
+
+/* PrimeReact input fix */
+.p-inputtext,
+.p-password-input {
+  padding: 0.75rem 1rem !important;
+  font-size: 1rem;
+  border-radius: 8px !important;
+  border: 1px solid #ccc !important;
+}
+
+/* Focus style */
+.p-inputtext:focus,
+.p-password-input:focus {
+  border-color: #1976d2 !important;
+  box-shadow: 0 0 4px rgba(25, 118, 210, 0.3);
+}
+
+.p-icon-field > .p-input-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5rem;
+  /* transform: translateY(-50%); */
+}
+.p-icon-field-right {
+  width: 100% !important;
+}
+.p-inputtext,
+.p-password-input {
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
