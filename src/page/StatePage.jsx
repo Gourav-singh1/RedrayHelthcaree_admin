@@ -6,7 +6,7 @@ import {
   getSpareparts,
 } from "../redux/actions/SparepartsAction";
 import { getStats } from "../redux/actions/StatsAction";
-import StateForm from "../components/stateForm";
+import StateForm from "../components/StateForm.jsx";
 
 function StatePage() {
   const [loading, setLoading] = useState(false);
