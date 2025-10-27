@@ -3,7 +3,6 @@ import CategoryPage from "./CategoryPage";
 import ProductsPage from "./ProductsPage";
 import SpareParts from "./SpareParts";
 import StatePage from "./StatePage";
-// import pagelogo from "../assets/pageLogo.svg";
 import PrimaryButton from "../shared/Button/PrimaryButton";
 import { confirmPopup } from "primereact/confirmpopup";
 import { logout } from "../services/auth";
@@ -32,7 +31,7 @@ function Dashboard() {
   return (
     <>
       <div className="container pt-4 flex align-content-center justify-content-between">
-        {/* <img width={150} src={pagelogo} alt="pagelogo" /> */} Radrays 
+        {/* <img width={150} src={} alt="" /> */} Radrays 
         <div>
           <PrimaryButton label="Logout" onClick={confirm} />
         </div>
