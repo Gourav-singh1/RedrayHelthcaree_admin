@@ -5,9 +5,8 @@ import SpareParts from "./SpareParts";
 import StatePage from "./StatePage";
 import PrimaryButton from "../shared/Button/PrimaryButton";
 import { confirmPopup } from "primereact/confirmpopup";
-import { logout } from "../services/auth";
+import { isAuthenticated, logout } from "../services/auth";
 import { useNavigate } from "react-router-dom";
-
 function Dashboard() {
   const navigate = useNavigate();
   const confirm = (event) => {
@@ -31,9 +30,14 @@ function Dashboard() {
   return (
     <>
       <div className="container pt-4 flex align-content-center justify-content-between">
-        {/* <img width={150} src={} alt="" /> */} Radrays 
+        {/* <img width={150} src={} alt="" /> */} Radrays
         <div>
-          <PrimaryButton label="Logout" onClick={confirm} />
+          {/* <PrimaryButton label="Logout" onClick={confirm} /> */}
+          {isAuthenticated() ? (
+            <PrimaryButton label="Logout" onClick={confirm} />
+          ) : (
+            <PrimaryButton label="Login" onClick={() => navigate("/login")} />
+          )}
         </div>
       </div>
       <CategoryPage />
