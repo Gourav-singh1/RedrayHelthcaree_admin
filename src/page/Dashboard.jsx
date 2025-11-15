@@ -7,6 +7,7 @@ import PrimaryButton from "../shared/Button/PrimaryButton";
 import { confirmPopup } from "primereact/confirmpopup";
 import { isAuthenticated, logout } from "../services/auth";
 import { useNavigate } from "react-router-dom";
+import pagelogo from "../assets/pagelogo.webp";
 function Dashboard() {
   const navigate = useNavigate();
   const confirm = (event) => {
@@ -29,8 +30,8 @@ function Dashboard() {
 
   return (
     <>
-      <div className="container pt-4 flex align-content-center justify-content-between">
-        {/* <img width={150} src={} alt="" /> */} Radrays
+      <div className="container pt-4 flex align-items-center justify-content-between">
+        <img width={150} src={pagelogo} alt="pagelogo" /> 
         <div>
           {/* <PrimaryButton label="Logout" onClick={confirm} /> */}
           {isAuthenticated() ? (

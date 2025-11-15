@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
-// import Gallery from "../../assets/images/gallery.png";
+import Gallery from "../../assets/gallery.svg";
 import InputLayout from "./InputLayout";
 import { getImageURL } from "../../utils/imageUrl.js";
 import { showToast } from "../../redux/slices/toastSlice.js";
@@ -135,12 +135,11 @@ export default function CustomImageInput({
               style={{ height: "85px", width: "85px" }}
             >
               <label htmlFor={name}>
-                {/* <img
-                  className="w-full h-full object-cover"
+                <img width={50}
+                  className=" object-cover cursor-pointer"
                   src={Gallery}
                   alt=""
-                /> */}
-                llllllll
+                />
               </label>
             </div>
           )}
